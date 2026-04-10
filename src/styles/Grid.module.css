@@ -1,0 +1,52 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  width: min(75vw, 420px);
+  margin: 24px auto;
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  border: 2px solid #d2b48c;
+  border-radius: 12px;
+  background: #fffaf0;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #4a3120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.15s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.cell:hover {
+  transform: translateY(-2px);
+  border-color: #b8834b;
+}
+
+.cell[aria-disabled="true"] {
+  cursor: default;
+  opacity: 0.8;
+}
+
+.selected {
+  background: #ffe4b5;
+  border-color: #b8834b;
+}
+
+.symbol {
+  pointer-events: none;
+}
+
+.cellInput {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #4a3120;
+  outline: none;
+}

@@ -1,0 +1,162 @@
+.screen {
+  width: min(92vw, 560px);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fffdf8;
+  border-radius: 24px;
+  padding: 28px;
+  box-shadow: 0 20px 45px rgba(83, 52, 23, 0.15);
+}
+
+.title {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.subtitle {
+  margin: 0;
+  color: #5b4533;
+}
+
+.card {
+  background: #fdf4e3;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.pickerRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.choice {
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 2px solid #d9b48f;
+  background: #fffaf0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.choiceActive {
+  background: #f9d9a7;
+  border-color: #b8834b;
+}
+
+.primary {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  background: #b8834b;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secondary {
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 2px solid #b8834b;
+  background: #fff;
+  color: #8a5c2f;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ghost {
+  border: none;
+  background: transparent;
+  color: #8a5c2f;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.actionRow {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.headerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: #fff;
+  padding: 8px 12px;
+  border-radius: 12px;
+  border: 1px solid #e1c9a8;
+}
+
+.levelBadge {
+  background: #ffe4b5;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: #8a5c2f;
+}
+
+.symbolPicker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #5b4533;
+}
+
+.input {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d9b48f;
+  background: #fff;
+}
+
+.hint {
+  text-align: center;
+  margin: 0;
+  color: #5b4533;
+}
+
+.resultRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+@media (max-width: 560px) {
+  .screen {
+    padding: 20px;
+  }
+
+  .card {
+    padding: 16px;
+  }
+}
